@@ -30,9 +30,9 @@ var temp2 = 0;
 
 function icyHot(temp1, temp2){
     if ( ((temp1 < 0 ) || (temp1 > 100)) && ((temp2 < 0 ) || (temp2 > 100)) )
-        console.log ('True');
+        return True;
     else 
-        console.log (false);
+        return false;
 }
       icyHot(120, -1);
 
@@ -52,9 +52,9 @@ var b = 0;
 
 function makes10(a,b){
     if ( ((a === 10) || (b === 10)) || ((a + b) === 10) )
-        console.log ('True');
+        return True;
     else 
-        console.log (false);
+        return false;
 }
       makes10(9, 10);
 
@@ -74,9 +74,9 @@ var str = '';
 function front22(str) {
   var strSlice = str.slice(0,2);
   if (str.length < 2) 
-      console.log(str+str+str);  
+      return str+str+str;  
   else 
-      console.log(strSlice+str+strSlice);
+      return strSlice+str+strSlice;
 }
   
 front22('kitten');
